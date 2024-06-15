@@ -1,0 +1,12 @@
+.color-alert {
+  display: block;
+  position: relative;
+  background-color: #e2f5e3;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.color-alert img {
+  width: 200px;
+}

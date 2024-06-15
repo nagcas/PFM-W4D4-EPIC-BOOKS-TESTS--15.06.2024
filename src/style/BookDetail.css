@@ -1,0 +1,40 @@
+.content-detail {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+img {
+  width: 300px;
+}
+
+.title-book,
+.category-book,
+.price-book {
+  font-weight: bold;
+}
+
+.btn-back {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.btn-back:hover {
+  background-color: #28a745;
+  font-weight: bold;
+}
+
+.btn-back:active {
+  background-color: #218838;
+}
+
+
+
+
+

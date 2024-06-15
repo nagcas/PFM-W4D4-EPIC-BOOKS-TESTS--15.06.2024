@@ -1,0 +1,37 @@
+.style-title {
+  font-size: 1.0em;
+}
+
+.card-item {
+  margin: 20px auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-animated {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  
+}
+
+.btn-animated:hover {
+  background-color: #28a745;
+}
+
+.btn-animated:active {
+  background-color: #218838;
+}
+
+.border-select {
+  border: 2px solid red;
+}
+

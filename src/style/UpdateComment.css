@@ -1,0 +1,49 @@
+.content-update {
+  text-align: center;
+  align-items: center;
+  width: 200px;
+}
+
+.btn-update {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  
+}
+
+.btn-update:hover {
+  background-color: #28a745;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-update:active {
+  background-color: #218838;
+}
+
+.btn-noUpdate {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  
+}
+
+.btn-noUpdate:hover {
+  background-color: #777978;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-noUpdate:active {
+  background-color: #383a39;
+}
