@@ -81,7 +81,7 @@ Assicurati di avere installato Node.js e npm (Node Package Manager) sul tuo comp
 
 1. **Clona il repository:**
    
-   git clone https://github.com/nagcas/PFM-W4D4-18.06.2024-EPICBOOKS.git
+   git clone https://github.com/nagcas/PFM-W4D4-EPIC-BOOKS-TESTS--15.06.2024.git
 
 ## Struttura del Progetto
 ```
