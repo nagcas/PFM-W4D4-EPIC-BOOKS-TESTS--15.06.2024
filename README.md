@@ -4,7 +4,7 @@
 
 ## Descrizione
 
-Il progetto _"EPIC Books"_ è un'applicazione web sviluppata con React e Bootstrap-react, progettata per gestire la visualizzazione dei books e i commenti.
+Il progetto _"EPIC Books"_ è un'applicazione web sviluppata con React e Bootstrap-react utilizzando `"Vite"`, progettata per gestire la visualizzazione dei books e i commenti.
 Gli utenti possono visualizzare, aggiungere, aggiornare ed eliminare commenti sui libri.
 L'applicazione utilizza diverse librerie per gestire il frontend e le richieste HTTP.
 
