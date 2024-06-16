@@ -23,15 +23,36 @@
   
 }
 
-.btn-animated:hover {
+/* .btn-animated:hover {
   background-color: #28a745;
 }
 
 .btn-animated:active {
   background-color: #218838;
-}
+} */
 
 .border-select {
   border: 2px solid red;
+}
+
+.btn-detail {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #E2F5E3;
+}
+
+.btn-detail:hover {
+  background-color: #28a745;
+  font-weight: bold;
+}
+
+.btn-detail:active {
+  background-color: #218838;
 }
 

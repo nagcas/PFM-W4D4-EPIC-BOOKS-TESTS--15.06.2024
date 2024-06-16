@@ -116,7 +116,12 @@ function AddComment({ elementId, setAdd, add }) {
                 <option value='4'>⭐⭐⭐⭐</option>
                 <option value='5'>⭐⭐⭐⭐⭐</option>
               </Form.Select>
-              <Button variant='primary' onClick={sendComment}>Add Comment</Button>
+              <button  
+                onClick={sendComment}
+                className='btn btn-add'
+              >
+                Add Comment
+              </button>
             </Form>
             {error && <Alert className='mt-4' variant='danger' onClose={() => setError('')} dismissible>{error}</Alert>}
             {message && <Alert className='mt-4' variant='success' onClose={() => setMessage(false)} dismissible>Comment sent successfully!</Alert>}

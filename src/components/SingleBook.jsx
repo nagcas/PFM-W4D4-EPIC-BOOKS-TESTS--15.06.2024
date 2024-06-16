@@ -72,13 +72,13 @@ function SingleBook({ book, selected, setSelected }) {
         </Card.Body>
 
         {/* Bottone per navigare verso i dettagli del libro */}
-        <Button
+        <button
           data-testid={`button-detail-${book.asin}`}
-          className={selected === book.asin ? 'btn-success w-75 m-auto mb-4 btn-animated' : 'd-none'}
+          className={selected === book.asin ? 'btn w-75 m-auto mb-4 btn-detail btn-animated' : 'd-none'}
           onClick={() => navigate(`/book-detail/${book.asin}/${book.category}`)}
         >
           Book Detail
-        </Button>
+        </button>
       </Card>
     </Col>
   );
