@@ -1,19 +1,22 @@
 // Importazione dei componenti necessari da React-Bootstrap
-import { Col, Form } from 'react-bootstrap';
+import { Col, Form, InputGroup } from 'react-bootstrap';
+import { Search } from 'react-bootstrap-icons';
 
 // Definizione del componente SearchBook
 function SearchBook({ search, handleSearch }) {
   return (
     <Col>
       {/* Form per la ricerca dei libri */}
-      <Form.Group className='m-3'>
-        <Form.Control 
+      <InputGroup>
+        <InputGroup.Text><Search /></InputGroup.Text>
+        <Form.Control
           type='search' // Tipo di input: ricerca
           placeholder='Search book...' // Messaggio di esempio nel campo di ricerca
           value={search} // Valore della ricerca
           onChange={handleSearch} // Funzione per gestire la ricerca
+          className='me-3'
         />
-      </Form.Group> 
+      </InputGroup>
     </Col>
   );
 }

@@ -3,12 +3,21 @@ import '../style/AllTheBook.css';
 
 // Importazione di componenti da React-Bootstrap e dei componenti locali
 import { Container, Row, Col } from 'react-bootstrap';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Import SingleBook
 import SingleBook from './SingleBook';
 
 function AllTheBooks({ books, search, category }) {
+
+  // Cambio il titolo del documento e si aggiorna al variare del valore dell'array delle dipendenza impostato sulla categoria del libro
+  function changeTitle() {
+    useEffect(() => {
+      document.title = `Epic Books - ${category}`;
+    }, [category]);
+  }
+  
+  changeTitle();
 
   // Stato per tracciare il libro selezionato
   const [selected, setSelected] = useState(false);

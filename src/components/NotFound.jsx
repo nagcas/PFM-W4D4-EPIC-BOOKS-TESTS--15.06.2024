@@ -6,10 +6,19 @@ import { Container } from "react-bootstrap";
 
 // Importa il contesto del tema
 import { ThemeContext } from '../modules/Contexts';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 
 function NotFound() {
+
+  // Cambio il titolo del documento e si aggiorna nel momento in cui si renderizza il componente la prima volta
+  function changeTitle() {
+    useEffect(() => {
+      document.title = 'Epic Books - Error 404';
+    }, []);
+  }
+  
+  changeTitle();
 
   // Utilizza il contesto del tema per cambiare lo sfondo dark o ligth quando richiesto
   const [themeCtx, setThemeCtx] = useContext(ThemeContext); 
