@@ -30,7 +30,7 @@ function NotFound() {
           <h1 className={themeCtx === 'dark' ? 'text-white' : 'text-dark'}>4🤯4</h1>
           <h4 className={themeCtx === 'dark' ? 'text-white' : 'text-dark'}>Opps! Page not found</h4>
           <p className={themeCtx === 'dark' ? 'text-white' : 'text-dark'}>Sorry, the page you're looking for doesn't exist.</p>
-          <Link to='/' className={themeCtx === 'dark' ? 'nav-link btn-notFound text-white' : 'nav-link btn-notFound'}>Back to Home</Link>
+          <Link to='/' className={themeCtx === 'dark' ? 'nav-link btn-notFound text-dark' : 'nav-link btn-notFound'}>Back to Home</Link>
         </div>
       </Container>
     </>

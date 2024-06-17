@@ -45,34 +45,33 @@ function AddComment({ elementId, setAdd, add }) {
     });
   };
 
-  // Funzione per inviare il commento
-  let sendComment = () => {
-    console.log(FormDataComment);
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevenire il comportamento predefinito del form
 
     // Controllo se il commento è vuoto
-    if (FormDataComment.comment.trim() === '') {
+    if (!FormDataComment.comment.trim()) {
       setError('Comment is required.');
       return;
     }
 
-  // Invio del commento tramite fetch (commentata perchè utilizzo axios)
-  //   fetch(url, {
-  //     method: 'POST',
-  //     body: JSON.stringify(FormDataComment),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       Authorization: token
-  //     }
-  //   })
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     console.log(data);
-  //     setMessage(true);
-  //     setFormDataComment({ comment: '', rate: 0, elementId: elementId });
-  //     setAdd(!add);
-  //   })
-  //   .catch((error) => console.error(error));
-  // };
+    // Invio del commento tramite fetch (commentata perchè utilizzo axios)
+    //   fetch(url, {
+    //     method: 'POST',
+    //     body: JSON.stringify(FormDataComment),
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       Authorization: token
+    //     }
+    //   })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //     setMessage(true);
+    //     setFormDataComment({ comment: '', rate: 0, elementId: elementId });
+    //     setAdd(!add);
+    //   })
+    //   .catch((error) => console.error(error));
+    // };
 
     // Invio del commento attraverso la libreria Axios
     axios.post('/comments', FormDataComment)
@@ -91,7 +90,7 @@ function AddComment({ elementId, setAdd, add }) {
         <Accordion.Item eventKey='0'>
           <Accordion.Header>Add Comment</Accordion.Header>
           <Accordion.Body>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className='mb-3' controlId='formComment'>
                 <Form.Label>Review</Form.Label>
                 <Form.Control 
@@ -116,12 +115,12 @@ function AddComment({ elementId, setAdd, add }) {
                 <option value='4'>⭐⭐⭐⭐</option>
                 <option value='5'>⭐⭐⭐⭐⭐</option>
               </Form.Select>
-              <button  
-                onClick={sendComment}
-                className='btn btn-add'
+              <Button  
+                className='btn btn-add text-dark'
+                type='submit'
               >
                 Add Comment
-              </button>
+              </Button>
             </Form>
             {error && <Alert className='mt-4' variant='danger' onClose={() => setError('')} dismissible>{error}</Alert>}
             {message && <Alert className='mt-4' variant='success' onClose={() => setMessage(false)} dismissible>Comment sent successfully!</Alert>}
@@ -134,3 +133,4 @@ function AddComment({ elementId, setAdd, add }) {
 
 // Esportazione del componente AddComment
 export default AddComment;
+

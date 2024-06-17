@@ -123,11 +123,11 @@ function UpdateComment({ comment, setAdd, add }) {
         </Modal.Body>
         <Modal.Footer>
           {/* Pulsante per chiudere il modale */}
-          <Button variant='secondary' className='btn-noUpdate' onClick={handleClose}>
+          <Button variant='secondary' className='btn-noUpdate text-dark' onClick={handleClose}>
             Close
           </Button>
           {/* Pulsante per salvare le modifiche al commento */}
-          <Button variant='success' className='btn-update' onClick={handleUpdateComment}>
+          <Button variant='success' className='btn-update text-dark' onClick={handleUpdateComment}>
             Save Changes
           </Button>
         </Modal.Footer>

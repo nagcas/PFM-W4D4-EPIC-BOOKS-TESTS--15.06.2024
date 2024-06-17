@@ -2,7 +2,7 @@
 import '../style/SingleBook.css';
 // Importa Placeholder, Spinner e altri componenti necessari da React Bootstrap
 import { useContext } from 'react';
-import { Col, Card, Button, Placeholder, Spinner } from 'react-bootstrap';
+import { Col, Card, Placeholder} from 'react-bootstrap';
 
 import { ThemeContext } from '../modules/Contexts';
 
@@ -74,7 +74,7 @@ function SingleBook({ book, selected, setSelected }) {
         {/* Bottone per navigare verso i dettagli del libro */}
         <button
           data-testid={`button-detail-${book.asin}`}
-          className={selected === book.asin ? 'btn w-75 m-auto mb-4 btn-detail btn-animated' : 'd-none'}
+          className={selected === book.asin ? 'btn w-75 m-auto mb-4 btn-detail btn-animated text-dark' : 'd-none'}
           onClick={() => navigate(`/book-detail/${book.asin}/${book.category}`)}
         >
           Book Detail
