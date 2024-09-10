@@ -1,34 +1,39 @@
 # EPIC Books Project - Modulo M5 W4D4 - 18.06.2024
 
-# TEST su EPIC Books
+## 📚 Descrizione
 
-## Descrizione
+Il progetto _"EPIC Books"_ è un'applicazione web sviluppata con React e Bootstrap-react utilizzando **Vite**. È progettata per gestire la visualizzazione dei libri e i commenti.
 
-Il progetto _"EPIC Books"_ è un'applicazione web sviluppata con React e Bootstrap-react utilizzando `"Vite"`, progettata per gestire la visualizzazione dei books e i commenti.
-Gli utenti possono visualizzare, aggiungere, aggiornare ed eliminare commenti sui libri.
-L'applicazione utilizza diverse librerie per gestire il frontend e le richieste HTTP.
+Gli utenti possono:
+- Visualizzare, aggiungere, aggiornare ed eliminare commenti sui libri.
+- Accedere a diverse librerie per gestire il frontend e le richieste HTTP.
 
-L'interfaccia è composta dalla Navbar, da un alert che simula una hero con titolo e logo, e dalle card che elencano le categorie selezionabili dal menù nella Navbar. Al clic su una singola card, il bordo si seleziona di rosso e appare un bottone che permette di accedere al dettaglio del libro, con la visualizzazione delle recensioni e la possibilità di lasciarne una. Inoltre, è possibile modificare una recensione o cancellarla.
+L'interfaccia comprende:
+- Navbar
+- Alert simile a una hero con titolo e logo
+- Card che elencano le categorie selezionabili dalla Navbar
 
-## Funzionalità
+Al clic su una card, il bordo si seleziona di rosso e appare un bottone per accedere ai dettagli del libro, visualizzare le recensioni e aggiungere/modificare/cancellare una recensione.
 
-* Visualizzazione della lista di commenti sui libri
-* Aggiunta di nuovi commenti
-* Aggiornamento dei commenti esistenti
-* Eliminazione dei commenti
-* Gestione e visualizzazione delle date dei commenti
-* Tematizzazione dell'applicazione
-* Test finali
+## 🚀 Funzionalità
 
-## Tecnologie Utilizzate
+- Visualizzazione della lista di commenti sui libri
+- Aggiunta di nuovi commenti
+- Aggiornamento dei commenti esistenti
+- Eliminazione dei commenti
+- Gestione e visualizzazione delle date dei commenti
+- Tematizzazione dell'applicazione
+- Test finali
 
-* **Vite-React**
-* React-Bootstrap
-* Axios
-* Date-fns
-* React-Bootstrap-Icons
+## 🛠️ Tecnologie Utilizzate
 
-## Installazione
+- **Vite-React**: 🛠️
+- React-Bootstrap: 🎨
+- Axios: 📡
+- Date-fns: 📅
+- React-Bootstrap-Icons: 🔗
+
+## 📥 Installazione
 
 ## Librerie Utilizzate
 
